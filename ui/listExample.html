@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="featurette-divider post">
+	    
+		<ul class="list-group" >
+		            <a  ng:repeat="elemento in elementos" ng-class="{active: elementoSeleccionado.id == elemento.id}" ng-click="seleccionar(elemento)" class="list-group-item">{{elemento.firstName}} {{elemento.lastName}}         
+		            </a>
+		</ul>
+	</div>
+
+
+	<div class="well" ng-hide="elementoSeleccionado == null">
+		<div class="row ">
+	        <div class="col-md-12">
+	          <h5 >Nombre <span class="text-muted">{{elementoSeleccionado.firstName}} {{elementoSeleccionado.lastName}}     </span></h5>
+	          <h5 >Actividad <span class="text-muted"> {{elementoSeleccionado.actividad}}     </span></h5>
+
+	        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
