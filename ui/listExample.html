@@ -1,29 +1,34 @@
 <div class="container">
-	<div class="featurette-divider post">
-	    
-		<ul class="list-group" >
+	<div class="featurette-divider post row">
+	    <div class="col-xs-12 col-md-6">
+
+	    	<ul class="list-group " >
 		            <a  ng:repeat="elemento in elementos" ng-class="{active: elementoSeleccionado.id == elemento.id}" ng-click="seleccionar(elemento)" class="list-group-item">{{elemento.firstName}} {{elemento.lastName}}         
 		            </a>
-		</ul>
+			</ul>
+
+	    </div>
+		
+
+
+		<div class=" col-xs-12 col-md-6" >
+			<div class="well media">
+			<div class="media-left">   <img width="128px" height="128px" class="img-circle" ng-src="img/face_{{elementoSeleccionado.id}}.png"> </div>
+			
+
+			  <div class="media-body">
+			    <h4  class="media-heading" >Nombre </h4>
+			    <h5 class="text-muted" >{{elementoSeleccionado.firstName}} {{elementoSeleccionado.lastName}}     </h5>
+				<h5 >Actividad </h5>
+				<h5 class="text-muted"> {{elementoSeleccionado.actividad}}     </h5>
+				<h5 >Resumen </h5>
+				<p class="text-muted"> {{elementoSeleccionado.resumen}}     </p>
+
+			  </div>
+			</div>
+	    </div>
 	</div>
 
 
-	<div class="well" ng-hide="elementoSeleccionado == null">
-		<div class="row ">
-	        <div class="col-md-12">
-	          <h5 >Nombre <span class="text-muted">{{elementoSeleccionado.firstName}} {{elementoSeleccionado.lastName}}     </span></h5>
-	          <h5 >Actividad <span class="text-muted"> {{elementoSeleccionado.actividad}}     </span></h5>
-
-	        </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
 </div>
+

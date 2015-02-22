@@ -8,3 +8,7 @@ Ng-route (app.js)
 Ng-repeat (listExampleController.js)
 
 etc.
+
+Para ver el ejemplo:
+
+http://armellajuan.github.io/ExampleAngularBoostap/#/home
