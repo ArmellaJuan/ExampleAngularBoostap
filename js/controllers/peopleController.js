@@ -1,5 +1,5 @@
 
-controllers.controller('listExampleController', function($scope) {
+controllers.controller('peopleController', function($scope) {
 
 
 	$scope.elementos = [

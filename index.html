@@ -18,7 +18,7 @@
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/controllers/listExampleController.js"></script>
+    <script src="js/controllers/peopleController.js"></script>
 
 
 
@@ -57,6 +57,8 @@
                   <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ejemplos <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li  ng-class="{active: navSelected == 'listExample'} " ><a ng-click="navSelected = 'listExample'" href="#listExample">Listas</a></li>
+                    <li  ng-class="{active: navSelected == 'tableExample'} " ><a ng-click="navSelected = 'tableExample'" href="#tableExample">Tablas</a></li>
+
                     <li class="divider"></li>
                     <li class="dropdown-header">Header</li>
                     <li><a >link</a></li>

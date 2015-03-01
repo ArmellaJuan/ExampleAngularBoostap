@@ -23,7 +23,11 @@
       }).
        when('/listExample', {
               templateUrl: 'ui/listExample.html',
-              controller: 'listExampleController'
+              controller: 'peopleController'
+      }).
+      when('/tableExample', {
+              templateUrl: 'ui/tableExample.html',
+              controller: 'peopleController'
       }).
       otherwise({
         redirectTo: '/home'
